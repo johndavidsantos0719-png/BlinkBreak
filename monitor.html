@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlinkBreak</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                👀 BlinkBreak
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main class="flex-grow-1">
+
+    <!-- Dashboard Header -->
+    <section class="container mt-5 text-center">
+
+        <h1 class="display-4 fw-bold">
+            👀 BlinkBreak Dashboard
+        </h1>
+
+        <p class="lead">
+            Stay productive while protecting your eyes.
+        </p>
+
+    </section>
+
+    <!-- Timer Card -->
+    <section class="container mt-5">
+
+        <div class="card shadow-lg p-4">
+
+            <h2 class="text-center">
+                🕒 Study Timer/Work Timer
+            </h2>
+
+            <p class="text-center text-muted">
+                Recommended: 20-minute Focused Study/Work Session
+            </p>
+
+            <h1 id="timerDisplay" class="display-2 text-center my-4">
+                20:00
+            </h1>
+
+            <div class="text-center">
+
+                <button id="startBtn" class="btn btn-success btn-lg me-2">
+                    ▶ Start
+                </button>
+
+                <button id="pauseBtn" class="btn btn-warning btn-lg me-2">
+                    ⏸ Pause
+                </button>
+
+                <button id="resetBtn" class="btn btn-danger btn-lg">
+                    ↺ Reset
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Blink Counter -->
+    <section class="container mt-4">
+
+        <div class="card shadow p-4">
+
+            <h3 class="text-center">
+                👀 Blink Counter
+            </h3>
+
+            <h1 id="blinkCounter" class="display-5 text-center">
+                0
+            </h1>
+
+            <p class="text-center text-muted">
+                <strong>Webcam monitoring will be added later.</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Eye Break Reminder -->
+    <section class="container mt-4">
+
+        <div class="card shadow p-4">
+
+            <h3 class="text-center">
+                ☕ Eye Break Reminder
+            </h3>
+
+            <p class="text-center">
+
+            <strong> Every 20 minutes, take a 30 second to 1 minute break before starting the timer again.</strong>
+            
+
+            </p>
+
+            <div class="alert alert-info text-center mt-3">
+
+                Your next reminder will appear here.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container mt-4 mb-5">
+
+        <div class="card shadow p-4">
+
+            <h3 class="text-center">
+                📈 Session Statistics
+            </h3>
+
+            <div class="row text-center mt-3">
+
+                <div class="col-md-4">
+
+                    <h4 id="studyTime">
+                        00:00:00
+                    </h4>
+
+                    <p>Total Study Time</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4 id="breakCount">
+                        0
+                    </h4>
+
+                    <p>Breaks Taken</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4 id="blinkRate">
+                        --
+                    </h4>
+
+                    <p>Blink Rate</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <!-- ======================= -->
+    <!-- FOOTER Group members  -->
+    <!-- ======================= -->
+
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">
+             2026 BlinkBreak | Developed by John David Santos, Alan Edgar Consebido & Mark Joshua Endegado
+            </p>
+        </div>
+    </footer>
+
+    <!---Boostrap and Javascript Section. JSD-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
